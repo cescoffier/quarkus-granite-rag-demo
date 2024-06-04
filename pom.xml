@@ -41,7 +41,7 @@
         </dependency>
         <dependency>
             <groupId>io.quarkiverse.langchain4j</groupId>
-            <artifactId>quarkus-langchain4j-redis</artifactId>
+            <artifactId>quarkus-langchain4j-infinispan</artifactId>
             <version>0.15.1</version>
         </dependency>
         <dependency>
