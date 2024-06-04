@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    --lumo-clickable-cursor: pointer;
+    --lumo-shade-5pct: rgba(1, 28, 41, 0.05);
+    --lumo-shade-10pct: rgba(1, 28, 41, 0.1);
+    --lumo-shade-20pct: rgba(1, 28, 41, 0.2);
+    --lumo-shade-30pct: rgba(1, 28, 41, 0.3);
+    --lumo-shade-40pct: rgba(1, 28, 41, 0.4);
+    --lumo-shade-50pct: rgba(1, 28, 41, 0.5);
+    --lumo-shade-60pct: rgba(1, 28, 41, 0.6);
+    --lumo-shade-70pct: rgba(1, 28, 41, 0.7);
+    --lumo-shade-80pct: rgba(1, 28, 41, 0.8);
+    --lumo-shade-90pct: rgba(1, 28, 41, 0.9);
+    --lumo-shade: #011c29;
+    --lumo-tint-5pct: rgba(1, 108, 135, 0.05);
+    --lumo-tint-10pct: rgba(1, 108, 135, 0.1);
+    --lumo-tint-20pct: rgba(1, 108, 135, 0.2);
+    --lumo-tint-30pct: rgba(1, 108, 135, 0.3);
+    --lumo-tint-40pct: rgba(1, 108, 135, 0.4);
+    --lumo-tint-50pct: rgba(1, 108, 135, 0.5);
+    --lumo-tint-60pct: rgba(1, 108, 135, 0.6);
+    --lumo-tint-70pct: rgba(1, 108, 135, 0.7);
+    --lumo-tint-80pct: rgba(1, 108, 135, 0.8);
+    --lumo-tint-90pct: rgba(1, 108, 135, 0.9);
+    --lumo-tint: #016c87;
+    --lumo-primary-text-color: #016a85;
+    --lumo-primary-color-50pct: rgba(1, 106, 133, 0.5);
+    --lumo-primary-color-10pct: rgba(1, 106, 133, 0.1);
+    --lumo-primary-color: #016a85;
+    font-family: var(--lumo-font-family);
+    font-size: var(--lumo-font-size-m);
+    line-height: var(--lumo-line-height-m);
+    color: var(--lumo-body-text-color);
+    background: ghostwhite;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #011c29;
+}
+
+header img{
+    height: 50px;
+    padding: 15px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main {
+    width:100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-y: scroll;   
+}
+
+#outlet {
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+.js-loading-indicator {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-size: smaller;
+}
+
+.logo {
+    font-family: "Rubik Pixels", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    padding: 10px;
+}
+
+
