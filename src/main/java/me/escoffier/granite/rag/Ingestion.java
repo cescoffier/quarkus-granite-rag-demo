@@ -10,7 +10,7 @@ import io.quarkus.logging.Log;
 import io.quarkus.runtime.Startup;
 import jakarta.inject.Singleton;
 
-import java.io.File;
+import java.nio.file.Path;
 import java.util.List;
 
 import static dev.langchain4j.data.document.splitter.DocumentSplitters.recursive;
@@ -27,8 +27,8 @@ public class Ingestion {
                 .documentSplitter(recursive(1024, 0))
                 .build();
 
-        File file = new File("documents");
-        List<Document> documents = FileSystemDocumentLoader.loadDocuments(file.toPath());
+        Path dir = Path.of("documents");
+        List<Document> documents = FileSystemDocumentLoader.loadDocuments(dir);
         Log.info("Ingesting " + documents.size() + " documents");
 
         ingestor.ingest(documents);
